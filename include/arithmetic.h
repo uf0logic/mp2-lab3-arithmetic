@@ -1,1 +1,10 @@
-// объявление функций и классов для вычисления арифметических выражений
+// РѕР±СЉСЏРІР»РµРЅРёРµ С„СѓРЅРєС†РёР№ Рё РєР»Р°СЃСЃРѕРІ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРёС… РІС‹СЂР°Р¶РµРЅРёР№
+#include <iostream>
+#include <string>
+#include "stack.h"
+
+void tokenizeExpression(const std::string& expression, Stack<char>& operators, Stack<std::string>& operands);
+
+double evaluatePostfix(const std::string& postfix);
+
+
